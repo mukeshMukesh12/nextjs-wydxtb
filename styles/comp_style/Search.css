@@ -1,0 +1,15 @@
+.drop-cont{
+  transform: translate(-17%, -70%);
+  z-index: 90;
+
+
+}
+
+.drop-cont .search-btn .btn {
+  background: var(--main-color);
+  top: 111%;
+  left: 48%;
+  transform: translate(-48%, -100%);
+  color: #fff;
+  padding: 15px 0;
+}

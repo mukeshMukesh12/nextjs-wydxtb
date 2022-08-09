@@ -1,0 +1,33 @@
+.line {
+  display: block;
+  width: 150px;
+  height: 5px;
+  background-color: #fff;
+}
+
+.lect-info-slide {
+  font-size: 12px !important;
+}
+
+.pay-sec .card {
+  width: 60px;
+}
+
+.btn.card {
+  font-size: 12px;
+  padding: 10px;
+}
+
+.cell-name {
+  font-size: 12px;
+}
+
+.per-info i {
+  top: 20px;
+  left: 20px;
+}
+
+label {
+  cursor: pointer;
+  color: rgb(24, 139, 192);
+}

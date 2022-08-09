@@ -1,0 +1,18 @@
+.home {
+  min-height: 80vh;
+  transform:  translate(0, -30px);
+}
+
+.home img {
+  width: 380px;
+  height: 411px;
+}
+
+.home .text-content h1{
+  font-size: 51px;
+}
+
+.home .text-content .home-desc {
+  line-height: 30px;
+
+}

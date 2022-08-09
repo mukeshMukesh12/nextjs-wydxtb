@@ -1,0 +1,16 @@
+ /**
+  * Who we are */
+.who-we-are .cross-border .cross-content {
+  height: auto;
+}
+
+
+.who-we-are .container h1::after {
+  margin: 20px auto;
+  background: #fff;
+}
+
+.the-best {
+  margin-top: -10%;
+  padding-top: 30px;
+}

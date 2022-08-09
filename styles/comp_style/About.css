@@ -1,0 +1,17 @@
+.about-us {
+  position: relative;
+  min-height: 50vh;
+  background: var(--sec-color);
+  margin-top: -30px;
+  z-index: 10!important;
+}
+
+
+
+.about-us .about-desc {
+  line-height: 30px;
+}
+
+.about-us h5{
+  margin-top: 32px;
+}

@@ -1,0 +1,187 @@
+* {
+  outline: none !important;
+}
+
+.good-wishes .cross-border .cross-content {
+  height: auto;
+}
+
+.good-wishes .container h1::after {
+  margin: 20px auto;
+  background: #fff;
+}
+
+/**
+ * Signin */
+
+.signin {
+  margin-top: -10%;
+  padding-top: 30px;
+}
+
+input,
+select {
+  border: none !important;
+}
+
+.signup {
+  margin-top: -11% !important;
+}
+.signin i {
+  top: 10px;
+  left: 10px;
+  color: #cac7c7;
+}
+
+.signin .active::-webkit-input-placeholder {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+/**
+ * Signup */
+
+.signup .col-md-5 img {
+  width: 250px;
+  height: 240px;
+  margin-bottom: 30px;
+  margin-top: -115px;
+}
+
+.signup .row {
+  margin-top: 116px;
+}
+
+/**
+ * auth_code */
+
+.code input {
+  width: 60px;
+}
+
+.code {
+  width: 280px;
+}
+
+/**
+ * Profile */
+
+.man-img {
+  width: 40px;
+  height: 40px;
+}
+
+.btn-container .count {
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  top: 3px;
+  left: 10px;
+}
+
+.profile-home h4.sec-title:after {
+  background-color: #fff !important;
+}
+
+.container-fluid .drop-cont {
+  top: 70%;
+}
+
+.index.drop-cont {
+  top: 100%;
+  transform: translate(-17%, -100%);
+}
+
+.profile-content a.btn:hover {
+  color: #fff;
+  background: var(--main-color);
+}
+
+.profile-content .pre-and-cond a {
+  font-size: 14px;
+}
+
+.clock .sqr {
+  padding: 10px;
+  border-radius: 6px;
+  width: 40px;
+  margin: 10px 0;
+}
+
+.profiles-top-header .lbl-cont {
+  margin-left: 5px;
+}
+
+.profiles-top-header .lbl-cont label {
+  font-size: 12px;
+  margin-right: 3px;
+}
+
+.profiles-top-header #inputState {
+  font-size: 12px;
+  padding: 5px;
+  width: 93px;
+}
+
+.profiles-top-header .filt-icon {
+  padding: 10px;
+  margin: 5px;
+}
+
+.profiles-top-header .btn-fit {
+  width: 10px;
+}
+
+/**
+ * Web 1366 - 11 */
+
+.container-fluid .user-img {
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  transform: translate(0, -50%);
+}
+
+.container-fluid .cust {
+  width: 90%;
+  margin-top: -35px;
+}
+
+.container-fluid .cust .line {
+  background-color: #333;
+}
+
+.container-fluid .cust .f-line {
+  width: 45px;
+}
+
+.container-fluid .cust .t-line {
+  width: 35px;
+}
+
+.container-fluid .cust .subject {
+  margin: 10px;
+  padding: 9px;
+}
+
+.obj-com img {
+  width: 50px;
+  height: 50px;
+}
+
+.step {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.le {
+  width: 41%;
+  height: 2px;
+  background-color: #ccc;
+  margin-top: 10px;
+}

@@ -1,0 +1,36 @@
+.line {
+    display: block;
+    width: 150px;
+    height: 5px;
+    background-color: #fff;
+}
+
+.visa-det {
+    font-size:12px;
+}
+
+.visa-date input {
+    display: inline-block;
+    width: 50px!important;
+    margin: 10px;
+}
+
+.with-visa .fa.fa-cc-visa {
+    top: 28px;
+    left: 28px
+}
+@media screen and (max-width:540px) { 
+    .home-content-title {
+        font-size: 15px;
+    }
+
+    .home-content-tec {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 762px) {
+    .left-hem-cfeer {
+        margin: 20px;
+    }
+}

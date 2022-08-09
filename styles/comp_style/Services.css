@@ -1,0 +1,47 @@
+.our-services .sec-title {
+  text-align: right !important;
+}
+
+.our-services .sec-title::after {
+  background: #fff;
+  margin: 20px 0;
+}
+
+.our-services .cross-border .card-core {
+  position: relative;
+  width: 225px;
+  height: 233px;
+  background: #fff;
+}
+
+.our-services .cross-border .card-core .c {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.our-services .cross-border .card-core .f-c {
+  top: 118%;
+  transform: translate(-50%, -100%);
+}
+
+.our-services .cross-border .card-core .t-c {
+  top: -30px;
+}
+
+.cross-border .cross-content {
+  transform: rotate(5deg);
+  width: 80%;
+  height: 655px;
+}
+.our-services .cross-border .card-core .card-content {
+  margin-top: 15px;
+  height: 88%;
+}
+
+.our-services .cross-border .card-core .card-content .card-desc {
+  color: #333;
+  word-break: break-all;
+}

@@ -1,0 +1,19 @@
+.fetures h1:after {
+  margin: 20px auto;
+}
+
+.fetures .container .card-content {
+  width: 200px;
+}
+
+.fetures .container .fet-card .top-block {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  padding: 7px;
+  top: -15px;
+}
+
+.fetures .container .fet-card .card-desc {
+  word-break: break-all;
+}

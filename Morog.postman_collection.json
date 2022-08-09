@@ -1,0 +1,1142 @@
+{
+	"info": {
+		"_postman_id": "ab4b4640-4f79-49c6-871d-07e633fb9e79",
+		"name": "Morog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "student",
+			"item": [
+				{
+					"name": "register student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "asem@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "fname",
+									"value": "asem",
+									"type": "text"
+								},
+								{
+									"key": "lname",
+									"value": "ahmed",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "cairo",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01159743868",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/user/registration/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"registration",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get student profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC91c2VyXC9yZWdpc3RyYXRpb25cL2xvZ2luIiwiaWF0IjoxNjI5NTQyNDU3LCJleHAiOjE2Mjk2Mjg4NTcsIm5iZiI6MTYyOTU0MjQ1NywianRpIjoiTkJmRW56eTlBSTlMdWNmRSIsInN1YiI6NSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsImZpcnN0X25hbWUiOiJhc2VtIiwibGFzdF9uYW1lIjoiYWhtZWQiLCJ0eXBlIjoic3R1ZGVudCJ9.I3vEgKNqgiTTZ9RsOSScn2KPy9S-FApebXS3joeH2CE",
+								"type": "text"
+							},
+							{
+								"key": "type",
+								"value": "student",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updete student profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC91c2VyXC9yZWdpc3RyYXRpb25cL2xvZ2luIiwiaWF0IjoxNjI5NTQyNDU3LCJleHAiOjE2Mjk2Mjg4NTcsIm5iZiI6MTYyOTU0MjQ1NywianRpIjoiTkJmRW56eTlBSTlMdWNmRSIsInN1YiI6NSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsImZpcnN0X25hbWUiOiJhc2VtIiwibGFzdF9uYW1lIjoiYWhtZWQiLCJ0eXBlIjoic3R1ZGVudCJ9.I3vEgKNqgiTTZ9RsOSScn2KPy9S-FApebXS3joeH2CE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fname",
+									"value": "ahmed",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "lname",
+									"value": "shico",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "shico@gmail.com",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "country",
+									"value": "egypt",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "uhh",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "password",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/user/profile/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"profile",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "asem@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/user/registration/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"registration",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout student",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC91c2VyXC9yZWdpc3RyYXRpb25cL2xvZ2luIiwiaWF0IjoxNjI5NTQyNDU3LCJleHAiOjE2Mjk2Mjg4NTcsIm5iZiI6MTYyOTU0MjQ1NywianRpIjoiTkJmRW56eTlBSTlMdWNmRSIsInN1YiI6NSwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyIsImZpcnN0X25hbWUiOiJhc2VtIiwibGFzdF9uYW1lIjoiYWhtZWQiLCJ0eXBlIjoic3R1ZGVudCJ9.I3vEgKNqgiTTZ9RsOSScn2KPy9S-FApebXS3joeH2CE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/user/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "services store delete update",
+					"item": [
+						{
+							"name": "store service",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvcmVnaXN0cmF0aW9uXC9sb2dpbiIsImlhdCI6MTYyOTYwMDE4MiwiZXhwIjoxNjI5Njg2NTgyLCJuYmYiOjE2Mjk2MDAxODIsImp0aSI6IktyRFdoZkRuSUJPNzRra0UiLCJzdWIiOjEsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkiLCJ0eXBlIjoiQWRtaW4ifQ.qDb5VbBrPkz2MYGqYuFU-t8V0Pymx6pR5kI6SmjAuzk",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "firebase",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "Education is very good",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/store/service",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"store",
+										"service"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update services",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvcmVnaXN0cmF0aW9uXC9sb2dpbiIsImlhdCI6MTYyOTYwMDE4MiwiZXhwIjoxNjI5Njg2NTgyLCJuYmYiOjE2Mjk2MDAxODIsImp0aSI6IktyRFdoZkRuSUJPNzRra0UiLCJzdWIiOjEsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkiLCJ0eXBlIjoiQWRtaW4ifQ.qDb5VbBrPkz2MYGqYuFU-t8V0Pymx6pR5kI6SmjAuzk",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "amr",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "cinema is tve view",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/update/service/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"update",
+										"service",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete service",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvcmVnaXN0cmF0aW9uXC9sb2dpbiIsImlhdCI6MTYyOTYwMDE4MiwiZXhwIjoxNjI5Njg2NTgyLCJuYmYiOjE2Mjk2MDAxODIsImp0aSI6IktyRFdoZkRuSUJPNzRra0UiLCJzdWIiOjEsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkiLCJ0eXBlIjoiQWRtaW4ifQ.qDb5VbBrPkz2MYGqYuFU-t8V0Pymx6pR5kI6SmjAuzk",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/api/delete/service/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"delete",
+										"service",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get latset 3 service",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvcmVnaXN0cmF0aW9uXC9sb2dpbiIsImlhdCI6MTYyOTYwMDE4MiwiZXhwIjoxNjI5Njg2NTgyLCJuYmYiOjE2Mjk2MDAxODIsImp0aSI6IktyRFdoZkRuSUJPNzRra0UiLCJzdWIiOjEsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkiLCJ0eXBlIjoiQWRtaW4ifQ.qDb5VbBrPkz2MYGqYuFU-t8V0Pymx6pR5kI6SmjAuzk",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/api/services",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"services"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "features store delete update",
+					"item": [
+						{
+							"name": "store feature",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvcmVnaXN0cmF0aW9uXC9sb2dpbiIsImlhdCI6MTYyOTYxNjIxMSwiZXhwIjoxNjI5NzAyNjExLCJuYmYiOjE2Mjk2MTYyMTEsImp0aSI6IjVQNmdBR0g0QXFlVnZ2dDgiLCJzdWIiOjEsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkiLCJ0eXBlIjoiQWRtaW4ifQ.dzet3w8FVVcQrz23XJFZ5D4pCzQu9-2H383JHyvHlJs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "viber",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "viberis goood now",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/store/feature",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"store",
+										"feature"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update feature",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvcmVnaXN0cmF0aW9uXC9sb2dpbiIsImlhdCI6MTYyOTYxNjIxMSwiZXhwIjoxNjI5NzAyNjExLCJuYmYiOjE2Mjk2MTYyMTEsImp0aSI6IjVQNmdBR0g0QXFlVnZ2dDgiLCJzdWIiOjEsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkiLCJ0eXBlIjoiQWRtaW4ifQ.dzet3w8FVVcQrz23XJFZ5D4pCzQu9-2H383JHyvHlJs",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title",
+											"value": "shico",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "cinema is tve view",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/update/feature/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"update",
+										"feature",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete feature",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvcmVnaXN0cmF0aW9uXC9sb2dpbiIsImlhdCI6MTYyOTYxNjIxMSwiZXhwIjoxNjI5NzAyNjExLCJuYmYiOjE2Mjk2MTYyMTEsImp0aSI6IjVQNmdBR0g0QXFlVnZ2dDgiLCJzdWIiOjEsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkiLCJ0eXBlIjoiQWRtaW4ifQ.dzet3w8FVVcQrz23XJFZ5D4pCzQu9-2H383JHyvHlJs",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/api/delete/feature/9",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"delete",
+										"feature",
+										"9"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get latset 3 feature",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvcmVnaXN0cmF0aW9uXC9sb2dpbiIsImlhdCI6MTYyOTYxNjIxMSwiZXhwIjoxNjI5NzAyNjExLCJuYmYiOjE2Mjk2MTYyMTEsImp0aSI6IjVQNmdBR0g0QXFlVnZ2dDgiLCJzdWIiOjEsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkiLCJ0eXBlIjoiQWRtaW4ifQ.dzet3w8FVVcQrz23XJFZ5D4pCzQu9-2H383JHyvHlJs",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/api/features",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"features"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "partners store delete update index",
+					"item": [
+						{
+							"name": "store partner",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvcmVnaXN0cmF0aW9uXC9sb2dpbiIsImlhdCI6MTYyOTYxMDYyNSwiZXhwIjoxNjI5Njk3MDI1LCJuYmYiOjE2Mjk2MTA2MjUsImp0aSI6IlRzWWxNTlU2RXp2RTE2TjEiLCJzdWIiOjEsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkiLCJ0eXBlIjoiQWRtaW4ifQ.Ga7bUQbk3V3PR999J9zNuztjYvXwCclhzsVbGDWkU1M",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/xampp/htdocs/moroj-apis/public/uploads/partners/default.jpg"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/store/partner",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"store",
+										"partner"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "update partner",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvcmVnaXN0cmF0aW9uXC9sb2dpbiIsImlhdCI6MTYyOTYxMDYyNSwiZXhwIjoxNjI5Njk3MDI1LCJuYmYiOjE2Mjk2MTA2MjUsImp0aSI6IlRzWWxNTlU2RXp2RTE2TjEiLCJzdWIiOjEsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkiLCJ0eXBlIjoiQWRtaW4ifQ.Ga7bUQbk3V3PR999J9zNuztjYvXwCclhzsVbGDWkU1M",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/PIKY/Desktop/download.jpg"
+										},
+										{
+											"key": "",
+											"value": "",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/update/partner/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"update",
+										"partner",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "delete partner",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvcmVnaXN0cmF0aW9uXC9sb2dpbiIsImlhdCI6MTYyOTYxMDYyNSwiZXhwIjoxNjI5Njk3MDI1LCJuYmYiOjE2Mjk2MTA2MjUsImp0aSI6IlRzWWxNTlU2RXp2RTE2TjEiLCJzdWIiOjEsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkiLCJ0eXBlIjoiQWRtaW4ifQ.Ga7bUQbk3V3PR999J9zNuztjYvXwCclhzsVbGDWkU1M",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/api/delete/partner/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"delete",
+										"partner",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "get latset 4 partners",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Authorization",
+										"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvcmVnaXN0cmF0aW9uXC9sb2dpbiIsImlhdCI6MTYyOTYxMDYyNSwiZXhwIjoxNjI5Njk3MDI1LCJuYmYiOjE2Mjk2MTA2MjUsImp0aSI6IlRzWWxNTlU2RXp2RTE2TjEiLCJzdWIiOjEsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkiLCJ0eXBlIjoiQWRtaW4ifQ.Ga7bUQbk3V3PR999J9zNuztjYvXwCclhzsVbGDWkU1M",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "http://localhost:8000/api/partners",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"partners"
+									],
+									"query": [
+										{
+											"key": "",
+											"value": "",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "register admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "amr@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "ahmed",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/admin/registration/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"registration",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get admin profile",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvcmVnaXN0cmF0aW9uXC9sb2dpbiIsImlhdCI6MTYyOTU1ODMxNiwiZXhwIjoxNjI5NjQ0NzE2LCJuYmYiOjE2Mjk1NTgzMTYsImp0aSI6IkYyZDdZc2p1aFhNUk1GSVgiLCJzdWIiOjIsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkiLCJ0eXBlIjoiQWRtaW4ifQ.c_Ne82RVxFbPUBZemq0IztPL_sZcFZdWMCxCP_kX3Ag",
+								"type": "text"
+							},
+							{
+								"key": "type",
+								"value": "student",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/admin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updete adminprofile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvcmVnaXN0cmF0aW9uXC9sb2dpbiIsImlhdCI6MTYyOTU2MjI4NywiZXhwIjoxNjI5NjQ4Njg3LCJuYmYiOjE2Mjk1NjIyODcsImp0aSI6ImlLVGQ3bWo0Znhnd21pUHoiLCJzdWIiOjIsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkiLCJ0eXBlIjoiQWRtaW4ifQ.dT5cjeSslRhrxq5JXWJnCy0_xeyvu_4jaGcTZv50HxY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "omr1",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "amr1@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/admin/profile/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"profile",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login admin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "amr@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/admin/registration/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"registration",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout admin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC9hZG1pblwvcmVnaXN0cmF0aW9uXC9sb2dpbiIsImlhdCI6MTYyOTU2MjI4NywiZXhwIjoxNjI5NjQ4Njg3LCJuYmYiOjE2Mjk1NjIyODcsImp0aSI6ImlLVGQ3bWo0Znhnd21pUHoiLCJzdWIiOjIsInBydiI6ImRmODgzZGI5N2JkMDVlZjhmZjg1MDgyZDY4NmM0NWU4MzJlNTkzYTkiLCJ0eXBlIjoiQWRtaW4ifQ.dT5cjeSslRhrxq5JXWJnCy0_xeyvu_4jaGcTZv50HxY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/admin/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"admin",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "teacher",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ahmed",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ahmed@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01094567642",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "Egypt",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "male",
+									"type": "text"
+								},
+								{
+									"key": "about",
+									"value": "arabic language tecaher",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "educational_qulifictions",
+									"value": "BS Computers",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/teacher/registration/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"teacher",
+								"registration",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "ahmed@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/teacher/registration/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"teacher",
+								"registration",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC90ZWFjaGVyXC9yZWdpc3RyYXRpb25cL2xvZ2luIiwiaWF0IjoxNjI5NTQzMjg2LCJleHAiOjE2Mjk2Mjk2ODYsIm5iZiI6MTYyOTU0MzI4NiwianRpIjoiVG9aSjhZSWQ3SzhIMkRPbyIsInN1YiI6NCwicHJ2IjoiYjI3YmVlMjNiYWY1NDI5ZjViOWEyMTY5NmZkZTAzYzI3NzA0NGVhNSIsInR5cGUiOiJUZWFjaGVyIn0.Vdl0E5XJ6xCAHVR9q6DCS_yNGCVDZEPOqZhLN8gLaTM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/teacher",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"teacher"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update profile",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC90ZWFjaGVyXC9yZWdpc3RyYXRpb25cL2xvZ2luIiwiaWF0IjoxNjI5NTQyOTA4LCJleHAiOjE2Mjk2MjkzMDgsIm5iZiI6MTYyOTU0MjkwOCwianRpIjoiRkZ5V1VTTUVBSVg4OERZTCIsInN1YiI6MywicHJ2IjoiYjI3YmVlMjNiYWY1NDI5ZjViOWEyMTY5NmZkZTAzYzI3NzA0NGVhNSIsInR5cGUiOiJUZWFjaGVyIn0.xljZepp3S5nm-ZmhKCpYMxj_SeGhGxyBeiP-I9-BF28",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "eman",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "eman@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01094567642",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "minia",
+									"type": "text"
+								},
+								{
+									"key": "gender",
+									"value": "female",
+									"type": "text"
+								},
+								{
+									"key": "about",
+									"value": "english teacher",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "password_confirmation",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "educational_qulifictions",
+									"value": "BS cOMPUTRES",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/teacher/profile/update",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"teacher",
+								"profile",
+								"update"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6ODAwMFwvYXBpXC90ZWFjaGVyXC9yZWdpc3RyYXRpb25cL2xvZ2luIiwiaWF0IjoxNjI5NTQzMjg2LCJleHAiOjE2Mjk2Mjk2ODYsIm5iZiI6MTYyOTU0MzI4NiwianRpIjoiVG9aSjhZSWQ3SzhIMkRPbyIsInN1YiI6NCwicHJ2IjoiYjI3YmVlMjNiYWY1NDI5ZjViOWEyMTY5NmZkZTAzYzI3NzA0NGVhNSIsInR5cGUiOiJUZWFjaGVyIn0.Vdl0E5XJ6xCAHVR9q6DCS_yNGCVDZEPOqZhLN8gLaTM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8000/api/teacher/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"teacher",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

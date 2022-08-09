@@ -1,0 +1,29 @@
+.prof-img {
+  width: 100px;
+  height: 100px
+}
+
+.prof-img-btn {
+  border: 3px solid var(--sec-color);
+}
+
+.prof-img-btn:hover {
+  cursor: pointer;
+}
+
+.cunt-logo {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  margin-top: 6px;
+}
+
+.form-row label {
+  font-size: 12px;
+
+}
+
+
+.form-row .form-check label[type=radio]:active {
+  color: red
+}

@@ -1,0 +1,22 @@
+.navbar {
+  border-bottom-left-radius: 20px!important;
+  border-bottom-right-radius: 20px!important;
+}
+
+.navbar .logo {
+  width: 109px;
+  height: 65px;
+  top: 135%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+.navbar-nav {
+  padding: 0
+}
+
+
+.navbar-nav .nav-item .nav-link,
+.navbar-nav .nav-item .nav-link:hover {
+  color: var(--main-color);
+}

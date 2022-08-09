@@ -1,0 +1,15 @@
+.des {
+  height: 40vh;
+}
+
+.des img {
+  width: 200px;
+  height: 300px;
+  margin-top: -85px;
+}
+.des .main {
+  background: url("../../img/bg/blue-hero-theme-image-fog-magic-secstion.png");
+  min-height: 200px;
+  border-radius: 20px;
+  padding: 10px;
+}
